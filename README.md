@@ -1,4 +1,4 @@
-# This README is under construction but will be completed by 12/19/2021
+# This README is under construction until 12/19/2021
 
 # COVID-19-Misinformation-Classificaton-System
 
