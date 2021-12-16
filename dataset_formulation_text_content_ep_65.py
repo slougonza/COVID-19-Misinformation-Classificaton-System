@@ -11,7 +11,7 @@ Our data comes from different sources following cells are combining them in one 
 """
 
 ## https://ieee-dataport.org/open-access/covid-19-fake-news-infodemic-research-dataset-covid19-fnir-dataset
-fake_news = pd.read_csv("/content/drive/MyDrive/saids697/Data/fakeNews.csv")#[['Text',"Binary Label"]].drop_duplicates()
+fake_news = pd.read_csv("/Data/fakeNews.csv")#[['Text',"Binary Label"]].drop_duplicates()
 fake_news = fake_news.rename(columns={"Binary Label": "label", "Text":'text'}) 
 fake_news = fake_news[['text','label']]
 fake_news
@@ -19,22 +19,22 @@ fake_news
 """# Following is NewsAPI data - column Text is in fact content"""
 
 ## Original Scraped Data 
-combined_trues1 = pd.read_csv('/content/drive/MyDrive/saids697/NEWSAPI1129_US_628_828/combined_csv.csv')[['content']].drop_duplicates()
+combined_trues1 = pd.read_csv('/Data/NEWSAPI1129_US_628_828-combined_csv.csv')[['content']].drop_duplicates()
 combined_trues1 = combined_trues1.rename(columns={"content":'text'}) 
 combined_trues1['label'] = 1 #we have to add a labeled column 1 since all are true
 
 ## Original Scraped Data 
-combined_trues2 = pd.read_csv('/content/drive/MyDrive/saids697/NEWSAPI1116_US_82820/combined_csv.csv')[['content']].drop_duplicates()
+combined_trues2 = pd.read_csv('/Data/NEWSAPI1116_US_82820-combined_csv.csv')[['content']].drop_duplicates()
 combined_trues2 = combined_trues2.rename(columns={"content":'text'}) 
 combined_trues2['label'] = 1 #we have to add a labeled column 1 since all are true
 
 ## Original Scraped Data 
-combined_trues3 = pd.read_csv('/content/drive/MyDrive/saids697/NEWSAPI1129_428/combined_csv.csv')[['content']].drop_duplicates()
+combined_trues3 = pd.read_csv('/Data/NEWSAPI1129_428-combined_csv.csv')[['content']].drop_duplicates()
 combined_trues3 = combined_trues3.rename(columns={"content":'text'}) 
 combined_trues3['label'] = 1 #we have to add a labeled column 1 since all are true
 
 ## Original Scraped Data 
-combined_trues4 = pd.read_csv('/content/drive/MyDrive/saids697/NEWSAPI1129_228/combined_csv.csv')[['content']].drop_duplicates()
+combined_trues4 = pd.read_csv('/Data/NEWSAPI1129_228-combined_csv.csv')[['content']].drop_duplicates()
 combined_trues4 = combined_trues4.rename(columns={"content":'text'}) 
 combined_trues4['label'] = 1 #we have to add a labeled column 1 since all are true
 
@@ -43,7 +43,7 @@ combined_trues4
 """#This data set contains both misinfo and non misinfo"""
 
 ## https://data.mendeley.com/datasets/zwfdmp5syg/1/files/3063167e-1d3b-4604-a630-16016a84e8db
-fake_new = pd.read_excel('/content/drive/MyDrive/saids697/Data/fake_new_dataset.xlsx')[["text","label"]].drop_duplicates()
+fake_new = pd.read_excel('/Data/fake_new_dataset.xlsx')[["text","label"]].drop_duplicates()
 fake_new
 
 """#Princeton Data
@@ -51,7 +51,7 @@ While most of data is in fact about misinformation, it has to be infosized that 
 """
 
 ## https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset 
-covid_misinfo = pd.read_excel('/content/drive/MyDrive/saids697/Data/Covid_Misinfo.xlsx').drop_duplicates()
+covid_misinfo = pd.read_excel('/Data/Covid_Misinfo.xlsx').drop_duplicates()
 covid_misinfo = covid_misinfo[covid_misinfo['Spanish']=='English']
 frames = [covid_misinfo[covid_misinfo['fake']==0], covid_misinfo[covid_misinfo['fake']==1]]
 covid_misinfo = pd.concat(frames) 
