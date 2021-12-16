@@ -67,23 +67,9 @@ covid_misinfo = covid_misinfo.rename(columns={ "Title":'text'})
 
 """
 
-from google.colab import auth
-auth.authenticate_user()
-
-import gspread
-from oauth2client.client import GoogleCredentials
-
-gc = gspread.authorize(GoogleCredentials.get_application_default())
-
-worksheet = gc.open('Infowars').sheet1
-
-# get_all_values gives a list of rows.
-rows = worksheet.get_all_values()
-print(rows)
-
 # Convert to a DataFrame and render.
 import pandas as pd
-iw1 = pd.DataFrame.from_records(rows)
+iw1 =  pd.read_excel('/Data/Infowars.xlsx')
 
 iw1 = iw1[1:]
 iw1.columns = ['url','text','title','label']
