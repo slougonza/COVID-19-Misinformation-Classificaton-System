@@ -16,7 +16,7 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
   
   https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset
 
-All data sets, along with the full data set can be found in our GitHub repository, along with all the cleaning code.
+All data sets, along with the final, combined data set can be found in our GitHub repository, along with all code used for cleaning.
 
 The final dataset used for analysis is the "cleaned_df.csv" found in the repo files
 
