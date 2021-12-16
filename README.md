@@ -18,6 +18,7 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
 
 All data sets, along with the full data set can be found in our GitHub repository, along with all the cleaning code.
 
+The final dataset used for analysis is the "cleaned_df.csv" found in the repo files
 
 ## The Models 
   Please be sure to comment out the GridSearchCV portions of the code, and they will significantly slow down execution time. 
