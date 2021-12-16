@@ -10,7 +10,7 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
  - **dataset_formulation_text_content_ep_65.py:** Concatenation of all datasets
  - **text_cleaning.py:** Cleaning, stemming, and train-test-split of the final dataset
  - **Basic-Text-Analysis-and-Supervised-Learning-Models.py:** Initial data exploration, Logistic Regression, Random Forest, and Ensemble Models 
- - 
+ - **LSTM.py:** Long Short Term Memory Model 
 # Getting Started 
 
 #! pip install -U gensim
