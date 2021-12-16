@@ -20,9 +20,6 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 
 from sklearn.model_selection import train_test_split
 
-#mount drive to access files in Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
 
 #set a value to random state to allow for reproducibility with 'random' functions
 random_state = 42
@@ -33,7 +30,7 @@ We read in our final dataset on which we will perform our text cleaning.
 """
 
 #read in final dataset
-data = pd.read_csv('/content/drive/MyDrive/saids697/Data/FINAL_with_articles_CSV.csv')
+data = pd.read_csv('/Data/FINAL_with_articles_CSV.csv')
 
 #shuffle rows to better distribute 0 and 1 labels throughout dataframe
 data = data.sample(frac=1,random_state=random_state).reset_index(drop=True)
@@ -214,7 +211,7 @@ final_data.head()
 
 #save final, cleaned dataframe to Google Drive
 final_data.to_csv('cleaned_df.csv')
-!cp cleaned_df.csv /content/drive/MyDrive/saids697/Data
+!cp cleaned_df.csv /Data
 
 """## Tokenize Data
 
@@ -238,7 +235,7 @@ print('The length of the vocabulary is', len(vocab), 'words.')
 with open('vocab_index.txt', 'w') as f:
      f.write(json.dumps(vocab))
 
-!cp vocab_index.txt /content/drive/MyDrive/saids697/Data
+!cp vocab_index.txt /Data
 
 """## Create Training, Validation, and Test Datasets
 
@@ -265,19 +262,19 @@ X_val, X_test, y_val, y_test = train_test_split(X_val_test, y_val_test,
 """## Save Training, Validation, and Test Datasets"""
 
 X_train.to_csv('X_train.csv')
-!cp 'X_train.csv' /content/drive/MyDrive/saids697/Data
+!cp 'X_train.csv' /Data
 
 y_train.to_csv('y_train.csv')
-!cp 'y_train.csv' /content/drive/MyDrive/saids697/Data
+!cp 'y_train.csv' /Data
 
 X_val.to_csv('X_val.csv')
 !cp 'X_val.csv' /content/drive/MyDrive/saids697/Data
 
 y_val.to_csv('y_val.csv')
-!cp 'y_val.csv' /content/drive/MyDrive/saids697/Data
+!cp 'y_val.csv' /Data
 
 X_test.to_csv('X_test.csv')
-!cp 'X_test.csv' /content/drive/MyDrive/saids697/Data
+!cp 'X_test.csv' /Data
 
 y_test.to_csv('y_test.csv')
-!cp 'y_test.csv' /content/drive/MyDrive/saids697/Data
+!cp 'y_test.csv' /Data
