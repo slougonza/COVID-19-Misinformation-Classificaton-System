@@ -16,9 +16,8 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
   
   https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset
 
-All data sets, along with the final, combined data set can be found in our GitHub repository, along with all code used for cleaning.
+All data sets, along with the final, combined dataset "cleaned_df.csv" can be found in our GitHub repository, along with all code used for "cleaningdataset_formulation_text_content_ep_65.py" and "dataset_formulation_text_content_ep_65.py"
 
-The final dataset used for analysis is the "cleaned_df.csv" found in the repo files
 
 ## The Models 
   Please be sure to comment out the GridSearchCV portions of the code, and they will significantly slow down execution time. 
