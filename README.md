@@ -18,6 +18,11 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
 
 All data sets, along with the final, combined dataset "cleaned_df.csv" can be found in our GitHub repository, along with all code used for "cleaningdataset_formulation_text_content_ep_65.py" and "dataset_formulation_text_content_ep_65.py"
 
+Our final dataset contained 4987 true news articles, and 5600 fake news articles. One important thing to note is that the average length of true news articles is 417 words per article, and 211 words per fake article. Below you can see the distribution of common words in both the True and Fake news articles:
+
+
+![visualization](https://user-images.githubusercontent.com/79933773/146419672-1893993a-e5ff-435b-b524-d9024f7d219c.png)
+
 
 ## The Models 
   Please be sure to comment out the GridSearchCV portions of the code, and they will significantly slow down execution time. 
