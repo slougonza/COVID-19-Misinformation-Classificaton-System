@@ -46,6 +46,6 @@ All data sets, along with the final, combined dataset **"cleaned_df.csv"** can b
 # The Team (The Team, The Team)
  - Stephanie Myott-Beebe https://github.com/smyottb
  - Anel Nurkayevaa https://github.com/nurkayevaa
- - Rio Zhang https://github.com/s452z851
+ - Shiran Zhang https://github.com/s452z851
  - Sarah Gonzalez https://github.com/slougonza
  
