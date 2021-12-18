@@ -35,9 +35,9 @@ All data sets, along with the final, combined dataset **"cleaned_df.csv"** can b
 
 # Model Performance  
   
-  Amoung our simple machine learning classifiers, our "soft" VotingClassifer trained on a LogisticRegression classifier, a RandomForestClassifier, and a    GradientBoostingClassifier produced the highest F1 score at **83.88%**. 
-
-  Our BERT deep learning model scored an 89%, BUT - his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE improvment!
+  1. Amoung our simple machine learning classifiers, our "soft" VotingClassifer trained on a LogisticRegression classifier, a RandomForestClassifier, and a    GradientBoostingClassifier produced the highest F1 score at **83.88%**. 
+  2. Our LSTM Model was the most time consuming, and reached a final accuracy of 81%
+  3. Our BERT deep learning model scored an 89%, BUT - his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE improvment!
   
   You may refer to our final report, "COVID-19 Misinformation Classification System.txt" for the full analyses of all models and final results. 
 
