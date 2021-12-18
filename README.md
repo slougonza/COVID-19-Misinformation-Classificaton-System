@@ -16,27 +16,28 @@ Since the discovery of the novel corornavirus-2019, there has been a lot of misi
   
 # Getting Started 
 
-#! pip install -U gensim
-
+Only the following 3 packages are needed to install in the Python 3 environment of your choice:
+```
+!pip install -U gensim
+!pip install torch
+!pip install transformers
+```
 # The Data 
  The data used for this analysis is a mixure of previously coded datasets, as well as newly encoded datasets by our team. 
  The code we gathered from existing sources can be found at the following sites:
  
-  https://ieee-dataport.org/open-access/covid-19-fake-news-infodemic-research-dataset-covid19-fnir-dataset
-  
-  https://data.mendeley.com/datasets/zwfdmp5syg/1 
-  
-  https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset
+ -  https://ieee-dataport.org/open-access/covid-19-fake-news-infodemic-research-dataset-covid19-fnir-dataset
+ -  https://data.mendeley.com/datasets/zwfdmp5syg/1 
+ -  https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset
 
 All data sets, along with the final, combined dataset **"cleaned_df.csv"** can be found in our GitHub repository.
 
 
 # Model Performance  
-  Please be sure to comment out the GridSearchCV portions of the code, and they will significantly slow down execution time. 
   
   Amoung our simple machine learning classifiers, our "soft" VotingClassifer trained on a LogisticRegression classifier, a RandomForestClassifier, and a    GradientBoostingClassifier produced the highest F1 score at **83.88%**. 
 
-  Our BERT deep learning model scored an 89%, but his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE Improvment
+  Our BERT deep learning model scored an 89%, BUT - his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE improvment!
   
   You may refer to our final report, "COVID-19 Misinformation Classification System.txt" for the full analyses of all models and final results. 
 
