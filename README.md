@@ -1,5 +1,5 @@
 
-# COVID-19 Misinformation Classification System 
+# COVID-19 Misinformation Classification System: An Analysis of Binary Classifiers to Detect U.S. COVID-19 Misinformation in Social Media and News Articles 
 
 ![covid-19 graphic2](https://user-images.githubusercontent.com/79933773/146621222-ab5e0984-6f27-492f-b49b-d51c15b28767.png)
 
