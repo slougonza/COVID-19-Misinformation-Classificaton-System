@@ -39,7 +39,7 @@ All data sets, along with the final, combined dataset **"cleaned_df.csv"** can b
 # Model Performance  
   
   1. Amoung our simple machine learning classifiers, our "soft" VotingClassifer trained on a LogisticRegression classifier, a RandomForestClassifier, and a    GradientBoostingClassifier produced the highest F1 score at **83.88%**. 
-  2. Our LSTM Model was the most time consuming, and reached a final accuracy of 81%
+  2. Our LSTM Model, which included hyperparamters from extremely in-depth hypertuning, reached a final accuracy of 81%
   3. Our BERT deep learning model scored an 89%, BUT - his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE improvment!
       - Our AutoML data and info can be found at: https://huggingface.co/anel/autonlp-cml-412010597/tree/main
   
