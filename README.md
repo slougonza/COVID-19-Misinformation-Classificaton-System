@@ -50,5 +50,5 @@ All data sets, along with the final, combined dataset **"cleaned_df.csv"** can b
  - Stephanie Myott-Beebe https://github.com/smyottb
  - Anel Nurkayevaa https://github.com/nurkayevaa
  - Shiran Zhang https://github.com/s452z851
- - Sarah Gonzalez https://github.com/slougonza
+ - Sarah Gonzalez https://github.com/slougonza 
  
