@@ -16,6 +16,7 @@ A brief video summarizing our findings can be found here: https://drive.google.c
  - **Basic-Text-Analysis-and-Supervised-Learning-Models.py:** Initial data exploration, Logistic Regression, Random Forest, and Ensemble Models 
  - **LSTM.py:** Long Short Term Memory Model
  - **BERT.py:** Bert deep learning model
+ - **RoBERTa.ipynb:** RoBERTa analysis
   
 # Getting Started 
 
