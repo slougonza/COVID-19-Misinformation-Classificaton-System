@@ -43,7 +43,7 @@ All data sets, along with the final, combined dataset **"cleaned_df.csv"** can b
   3. Our BERT deep learning model scored an 89%, BUT - his close cousin roBERTa reached an F1 score of a whopping **95%**! A HUGE improvement!
       - Our AutoML data and info can be found at: https://huggingface.co/anel/autonlp-cml-412010597/tree/main
   
-  You may refer to our final report, "COVID-19 Misinformation Classification System.txt" for the full analyses of all models and final results. 
+  You may refer to our final report, "COVID-19 Misinformation Classification System - Final Report.pdf" for the full analyses of all models and final results. 
 
 
 # The Team (The Team, The Team)
